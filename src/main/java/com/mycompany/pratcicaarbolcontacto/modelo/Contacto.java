@@ -15,6 +15,12 @@ public class Contacto {
     public Contacto() {
     }
 
+    public Contacto(String numero, String nombre) {
+        this.numero = numero;
+        this.nombre = nombre;
+    }
+    
+
     public String getNumero() {
         return numero;
     }
