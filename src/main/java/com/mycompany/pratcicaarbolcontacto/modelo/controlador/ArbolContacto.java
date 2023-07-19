@@ -17,9 +17,14 @@ public class ArbolContacto {
     public ArbolContacto() {
         raiz = null;
     }
+
+    public Nodo getRaiz() {
+        return raiz;
+    }
+    
     
     public void insertar(Contacto contacto){
-        if(raiz != null){
+        if(raiz == null){
             raiz = new Nodo(contacto);
         }else{
             insertarRecursivo(raiz, contacto);
@@ -27,14 +32,15 @@ public class ArbolContacto {
     }
     
     private void insertarRecursivo(Nodo nodo,Contacto nuevoContacto){
+        
         if(nuevoContacto.getNombre().compareTo(nodo.getContacto().getNombre()) < 0){
-            if (nodo.getIzquierda() != null) {
+            if (nodo.getIzquierda() == null) {
                 nodo.setIzquierda(new Nodo(nuevoContacto));
             }else{
                 insertarRecursivo(nodo.getIzquierda(), nuevoContacto);
             }
         }else if(nuevoContacto.getNombre().compareTo(nodo.getContacto().getNombre()) > 0){
-            if (nodo.getDerecha() != null) {
+            if (nodo.getDerecha() == null) {
                 nodo.setDerecha(new Nodo(nuevoContacto));
             }else{
                 insertarRecursivo(nodo.getDerecha(), nuevoContacto);
@@ -86,13 +92,15 @@ public class ArbolContacto {
         //biuscamos el nodo, segun eñ nombre que llega como argumento
         if(nombre.compareTo(nodo.getContacto().getNombre()) < 0){
             //si el nombre es menor
-            elimnarContactoRecursivo(nodo.getIzquierda(), nombre);
-        }else if(nombre.compareTo(nodo.getContacto().getNombre()) > 0){
+            nodo.setIzquierda(elimnarContactoRecursivo(nodo.getIzquierda(), nombre));
             
+        }else if(nombre.compareTo(nodo.getContacto().getNombre()) > 0){
+            //si el derecha ess mayor
+            nodo.setDerecha(elimnarContactoRecursivo(nodo.getDerecha(), nombre));
         }else{
             //caso 1 el nodo no tiene hijos
             if(nodo.getDerecha() == null && nodo.getIzquierda() == null){
-                
+                System.out.println("Hoy vamos a destrozar esta integarl, con el ojo brutal ya desbloqueado f(x)= sqrt(x**2 + sin(x))");
             }
             
             // caso 2 el nodo a eliminar solo tiene un hijo
@@ -108,7 +116,7 @@ public class ArbolContacto {
             nodo.setContacto(sucesor.getContacto());
             nodo.setDerecha(elimnarContactoRecursivo(nodo.getDerecha(), sucesor.getContacto().getNombre()));
             
-        }return null;
+        }return nodo;
     }
     
     
