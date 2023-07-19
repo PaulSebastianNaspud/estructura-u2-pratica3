@@ -27,5 +27,6 @@ public class PratcicaArbolContacto {
         arbol.insertar(c4);
         arbol.insertar(new Contacto("12345","Juliana"));
         arbol.insertar(new Contacto("12345","Jhon"));
+        arbol.insertar(new Contacto("12345","Jhonn"));
     }
 }

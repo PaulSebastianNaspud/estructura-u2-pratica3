@@ -73,5 +73,50 @@ public class ArbolContacto {
         
         return Math.max(alturaIzquierda, alturaDerecha) + 1;
     }
-
+    
+    public void elminarContacto(String nombre){
+        raiz = elimnarContactoRecursivo(raiz,nombre);
+    }
+    
+    public Nodo elimnarContactoRecursivo(Nodo nodo,String nombre){
+        if(raiz == null){
+            return nodo;
+        }
+        
+        //biuscamos el nodo, segun eñ nombre que llega como argumento
+        if(nombre.compareTo(nodo.getContacto().getNombre()) < 0){
+            //si el nombre es menor
+            elimnarContactoRecursivo(nodo.getIzquierda(), nombre);
+        }else if(nombre.compareTo(nodo.getContacto().getNombre()) > 0){
+            
+        }else{
+            //caso 1 el nodo no tiene hijos
+            if(nodo.getDerecha() == null && nodo.getIzquierda() == null){
+                
+            }
+            
+            // caso 2 el nodo a eliminar solo tiene un hijo
+            if(nodo.getDerecha() == null){
+                return nodo.getIzquierda();
+            }else if(nodo.getDerecha() == null){
+                return nodo.getDerecha();
+            }
+            
+            //caso 3 nodo sucesor
+            Nodo sucesor = encontrorMinimo(nodo.getDerecha());
+            //actualizamos el valor
+            nodo.setContacto(sucesor.getContacto());
+            nodo.setDerecha(elimnarContactoRecursivo(nodo.getDerecha(), sucesor.getContacto().getNombre()));
+            
+        }return null;
+    }
+    
+    
+    private Nodo encontrorMinimo(Nodo nodo) {
+        while(nodo.getIzquierda() != null){
+            nodo = nodo.getIzquierda();
+        }
+        
+        return nodo;
+    }
 }
