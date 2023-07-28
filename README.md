@@ -13,9 +13,9 @@ Este proyecto aspira a diseñar un sistema sofisticado para la administración d
 Cada contacto en el sistema es una entidad multifacética, que incluye un nombre, un número de teléfono, una colección de correos electrónicos y un diccionario que registra las redes sociales del contacto. Es interesante destacar que en este diccionario, la red social actúa como clave, lo que facilita el acceso y la gestión de la información.
 
 ## Clases Principales
-Clase 'Contacto': Encapsula los datos esenciales de un contacto: nombre, número de teléfono, correos electrónicos y redes sociales.
-Clase 'Nodo': Representa los nodos del ABB. Cada nodo contiene un objeto 'Contacto' y referencias a sus nodos hijos (izquierdo y derecho).
-Clase 'ArbolContactos': Representa el ABB y mantiene su estructura. Proporciona métodos para agregar, buscar y eliminar contactos.
+'Contacto' : Encapsula los datos esenciales de un contacto: nombre, número de teléfono, correos electrónicos y redes sociales.
+'Nodo' : Representa los nodos del ABB. Cada nodo contiene un objeto 'Contacto' y referencias a sus nodos hijos (izquierdo y derecho).
+'ArbolContactos' : Representa el ABB y mantiene su estructura. Proporciona métodos para agregar, buscar y eliminar contactos.
 ## Funcionalidades
 Inserción ordenada: Utilizando las propiedades del ABB, los contactos se insertan de forma ordenada basándose en el nombre del contacto.
 Búsqueda y eliminación eficiente: Permite buscar y eliminar un contacto por nombre utilizando las propiedades del ABB para optimizar estas operaciones.
