@@ -7,7 +7,8 @@
 ### Docente: 
 
 ## Gestor de Contactos con Árbol Binario de Búsqueda
-### 1. Descripción del Proyecto
+
+# 1. Descripción del Proyecto
   Este proyecto aspira a diseñar un sistema sofisticado para la administración de una lista de contactos telefónicos. Nuestra estrategia se basa en la    
   implementación de una estructura de datos conocida como Árbol Binario de Búsqueda (ABB). Esta estructura de árbol permite optimizar eficazmente las operaciones  
   fundamentales de adición, búsqueda y eliminación de contactos.
@@ -16,16 +17,34 @@
   de la información.
 
 ## 1.1 _Clases Principales
-    * Contacto : Encapsula los datos esenciales de un contacto: nombre, número de teléfono, correos electrónicos y redes sociales.
-    * Nodo : Representa los nodos del ABB. Cada nodo contiene un objeto 'Contacto' y referencias a sus nodos hijos (izquierdo y derecho).
-    * ArbolContactos : Representa el ABB y mantiene su estructura. Proporciona métodos para agregar, buscar y eliminar contactos.
+  - **Contacto** : Encapsula los datos esenciales de un contacto: nombre, número de teléfono, correos electrónicos y redes sociales.
+  - **Nodo** : Representa los nodos del ABB. Cada nodo contiene un objeto 'Contacto' y referencias a sus nodos hijos (izquierdo y derecho).
+  - **ArbolContactos** : Representa el ABB y mantiene su estructura. Proporciona métodos para agregar, buscar y eliminar contactos.
   
 ## 1.2 Funcionalidades
-    Inserción ordenada: Utilizando las propiedades del ABB, los contactos se insertan de forma ordenada basándose en el nombre del contacto.
-    Búsqueda y eliminación eficiente: Permite buscar y eliminar un contacto por nombre utilizando las propiedades del ABB para optimizar estas operaciones.
-    Métodos de recorrido del árbol: Implementa los métodos de recorrido del árbol (preorden, inorden, postorden, anchura) para visualizar los contactos en diferentes
-    secuencias.
+  Inserción ordenada: Utilizando las propiedades del ABB, los contactos se insertan de forma ordenada basándose en el nombre del contacto.
+  Búsqueda y eliminación eficiente: Permite buscar y eliminar un contacto por nombre utilizando las propiedades del ABB para optimizar estas operaciones.
+  Métodos de recorrido del árbol: Implementa los métodos de recorrido del árbol (preorden, inorden, postorden, anchura) para visualizar los contactos en diferentes
+  secuencias.
   
 ## 1.3 Uso
-    El programa principal interactúa con el usuario a través de un menú de opciones, donde puede seleccionar la operación de gestión de contactos que desea realizar.
-    El sistema utiliza objetos de las clases Contacto, Nodo y ArbolContactos para ejecutar las operaciones correspondientes.
+  El programa principal interactúa con el usuario a través de un menú de opciones, donde puede seleccionar la operación de gestión de contactos que desea realizar.
+  El sistema utiliza objetos de las clases Contacto, Nodo y ArbolContactos para ejecutar las operaciones correspondientes.
+
+# 2. Desarrollo
+
+## 2.1 Modelo-Vista-Controlador (MVC)
+
+  El diseño y desarrollo del sistema sigue el patrón de diseño Modelo-Vista-Controlador (MVC):
+
+  - **Modelo**: Compuesto por las clases `Contacto`, `Nodo` y `ArbolContactos`, cada una representando diferentes componentes del sistema.
+  - **Vista**: Gestiona la representación visual e interactiva de los datos del modelo.
+  - **Controlador**: Coordina las interacciones entre el modelo y la vista, gestiona las entradas del usuario y actualiza la vista y el modelo según corresponda.
+
+## 2.2 Convenciones de Java
+
+  El desarrollo se realiza siguiendo las convenciones estándar de código Java, lo que abarca los nombres de las clases, métodos, variables y constantes. El uso de   
+  CamelCase y guiones bajos asegura un código coherente, legible y mantenible.
+
+
+
