@@ -52,11 +52,16 @@ atención a aquellos métodos que emplean la técnica de la recursión, dada su 
 El código representa la implementación de un Árbol Binario de Búsqueda (ABB) para manejar una lista de contactos. Incluye tres métodos esenciales:
 - insert(Contacto newContacto): Es el método público inicial para la inserción de un nuevo contacto en el ABB. Si el árbol está vacío, genera una nueva raíz; si no,
   desencadena un procedimiento de inserción recursiva.
-- getRoot(): Proporciona el nodo raíz del ABB.
 - insertResursivo(Node node, Contacto newContacto): Realiza el procedimiento de inserción de un contacto en el ABB de manera recursiva, comparando los nombres de
   los contactos y determinando la ubicación adecuada del nuevo contacto en el árbol.
+  
 ![Metodo de insertar](https://github.com/PaulSebastianNaspud/estructura-u2-pratica3/assets/131235143/c39105b5-7bf7-408e-ae92-aa35dc63c06d)
 
+### Metodo eliminar contacto
+- eliminarContacto sirve como punto de entrada, iniciando la eliminación recursiva desde la raíz del árbol.
+- eliminarContactoRecimplementa la eliminación recursiva. Si el árbol está vacío, se devuelve null. Si no, se compara el nombre del contacto a eliminar con el
+  nombre del contacto en el nodo actual y se decide si buscar en el subárbol izquierdo o derecho. Si se encuentra una coincidencia, el nodo se elimina de acuerdo
+  con uno de los tres casos.
 
-
+![Eliminar Recursivo](https://github.com/PaulSebastianNaspud/estructura-u2-pratica3/assets/131235143/416b2d52-344f-4def-bd6a-a9a3e8691308)
 
