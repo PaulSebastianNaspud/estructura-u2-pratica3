@@ -85,7 +85,7 @@ public class Controlador {
                 ingresarC(nombre);
         }
     }
-    
+
 
     public void ingresarC(String nombre) {
         vista.mostrarMensaje("INGRESO DE UN NUEVO CONTACTO");
