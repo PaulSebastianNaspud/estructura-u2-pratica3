@@ -9,8 +9,9 @@
 ## Gestor de Contactos con Árbol Binario de Búsqueda
 
 # 1. Descripción del Proyecto
-Este proyecto aspira a diseñar un sistema sofisticado para la administración de una lista de contactos telefónicos. Nuestra estrategia se basa en la implementación 
-de una estructura de datos conocida como Árbol Binario de Búsqueda (ABB). Esta estructura de árbol permite optimizar eficazmente las operaciones  
+
+Este proyecto aspira a diseñar un sistema sofisticado para la administración de una lista de contactos telefónicos. Atrabez de la implementación 
+de estructuras de datos conocidas como Árbol Binario de Búsqueda (ABB). Esta estructura de árbol permite optimizar eficazmente las operaciones  
 fundamentales de adición, búsqueda y eliminación de contactos. Cada contacto en el sistema es una entidad multifacética, que incluye un nombre, un número de 
 teléfono, una colección de correos electrónicos y un diccionario que registra las redes sociales del contacto. Es interesante destacar que en este diccionario, la 
 red social actúa como clave, lo que facilita el acceso y la gestión de la información.
@@ -21,10 +22,10 @@ red social actúa como clave, lo que facilita el acceso y la gestión de la info
 - **ArbolContactos** : Representa el ABB y mantiene su estructura. Proporciona métodos para agregar, buscar y eliminar contactos.
   
 ## 1.2 Funcionalidades
-Inserción ordenada: Utilizando las propiedades del ABB, los contactos se insertan de forma ordenada basándose en el nombre del contacto.
-Búsqueda y eliminación eficiente: Permite buscar y eliminar un contacto por nombre utilizando las propiedades del ABB para optimizar estas operaciones.
-Métodos de recorrido del árbol: Implementa los métodos de recorrido del árbol (preorden, inorden, postorden, anchura) para visualizar los contactos en diferentes
-secuencias.
+- **Inserción ordenada**: Utilizando las propiedades del ABB, los contactos se insertan de forma ordenada basándose en el nombre del contacto.
+- **Búsqueda y eliminación eficiente**: Permite buscar y eliminar un contacto por nombre utilizando las propiedades del ABB para optimizar estas operaciones.
+- **Métodos de recorrido del árbol**: Implementa los métodos de recorrido del árbol (preorden, inorden, postorden, anchura) para visualizar los contactos en
+  diferentes secuencias.
   
 ## 1.3 Uso
 El programa principal interactúa con el usuario a través de un menú de opciones, donde puede seleccionar la operación de gestión de contactos que desea realizar.
@@ -34,7 +35,7 @@ El sistema utiliza objetos de las clases Contacto, Nodo y ArbolContactos para ej
 
 ## 2.1 Modelo-Vista-Controlador (MVC)
 El diseño y desarrollo del sistema sigue el patrón de diseño Modelo-Vista-Controlador (MVC):
--  **Modelo**: Compuesto por las clases `Contacto`, `Nodo` y `ArbolContactos`, cada una representando diferentes componentes del sistema.
+-  **Modelo**: Compuesto por las clases Contacto, Nodo y ArbolContactos, cada una representando diferentes componentes del sistema.
 - **Vista**: Gestiona la representación visual e interactiva de los datos del modelo.
 - **Controlador**: Coordina las interacciones entre el modelo y la vista, gestiona las entradas del usuario y actualiza la vista y el modelo según corresponda.
 
@@ -64,6 +65,47 @@ El código representa la implementación de un Árbol Binario de Búsqueda (ABB)
 
 ![Eliminar Recursivo](https://github.com/PaulSebastianNaspud/estructura-u2-pratica3/assets/131235143/416b2d52-344f-4def-bd6a-a9a3e8691308)
 
-# Otros
+## 4. Resultados
+
+El sistema de gestión de contactos, implementando un Árbol Binario de Búsqueda (ABB), ha probado ser una solución eficiente para el manejo de contactos. El ABB, con su capacidad para realizar operaciones de inserción, búsqueda y eliminación en tiempo logarítmico, ha proporcionado una mejora significativa en el rendimiento en comparación con estructuras de datos lineales como listas o arrays.
+
+## 5. Conclusiones
+
+## Conclusiones
+
+El desarrollo de este sistema de gestión de contactos ha proporcionado una experiencia práctica valiosa en la implementación de un Árbol Binario de Búsqueda (ABB) 
+y el patrón de diseño Modelo-Vista-Controlador (MVC) en Java. A través de la resolución de los retos que suponía la creación del sistema, se han adquirido 
+habilidades sólidas en estructuras de datos, algoritmos de búsqueda y programación orientada a objetos.
+
+El uso de GitHub para el control de versiones y el manejo del proyecto ha facilitado el seguimiento de los cambios y la colaboración, sino que también ha permitido 
+documentar de manera efectiva el desarrollo.
+
+El proyecto ha demostrado cómo la correcta aplicación de las convenciones de código de Java puede conducir a un código más legible y mantenible. A su vez, se ha 
+evidenciado cómo el patrón MVC contribuye a la organización del código, permitiendo la separación de responsabilidades y facilitando la escalabilidad del proyecto.
+
+## 6. Recomendaciones
+
+Para futuros mejoras:
+
+- **Manejo de Contactos Duplicados**: Permitir contactos con el mismo nombre pero con diferentes datos de contacto (p.ej., número de teléfono, correo electrónico).
+
+- **Persistencia de Datos**: Implementar una funcionalidad para el almacenamiento persistente de contactos, de modo que los datos no se pierdan cuando el programa
+- se cierra. Esto podría lograrse con archivos, bases de datos o servicios en la nube.
+
+- **Interfaz de Usuario**: Desarrollar una interfaz de usuario gráfica que sea intuitiva y fácil de usar. Esto permitiría a los usuarios interactuar con el sistema
+  de manera más eficiente y mejorar la experiencia del usuario en general.
+  
+## 7. Anexos de Bibliotecas
+- import java.util.LinkedList: La biblioteca LinkedList en Java se utiliza para implementar listas enlazadas, que proporcionan una manipulación eficiente de
+  elementos al permitir inserciones y eliminaciones rápidas.
+- import java.util.Queue: La biblioteca Queue en Java es una interfaz que se utiliza para implementar estructuras de datos del tipo cola, que operan bajo el
+  principio de primero en entrar, primero en salir (FIFO).
+- import java.util.Map: La biblioteca Map en Java es una interfaz que representa una estructura de datos que mapea claves únicas a valores, útil para el
+  almacenamiento y recuperación eficiente de datos.
+
+## 8. Herramientas
+
+## Otros
 [Pagina web Carbono](https://carbon.now.sh/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=material&wt=none&l=text%2Fx-php&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=47px&ph=32px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false)
 [Documentacion Markdown](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+[Java util](https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html)
