@@ -3,7 +3,11 @@
 
 # Estructura de Datos Proyectos de Fin de ciclo
 
-### Integrantes: Paul Naspud @PaulSebastianNaspud , Karen Quito @KQuitol
+### Integrantes: Paul Naspud [PaulSebastianNaspud](https://github.com/PaulSebastianNaspud) 
+pnaspudv@est.ups.edu.ec
+### Karen Quito [kquitol](https://github.com/kquitol)
+kquitol@est.ups.edu.ec
+
 ### Docente: 
 
 ## Gestor de Contactos con Árbol Binario de Búsqueda
@@ -102,6 +106,9 @@ Para futuros mejoras:
   almacenamiento y recuperación eficiente de datos.
 
 ## 8. Herramientas
+- NetBeabs 17
+- JDK 17
+- Visual Studio Code 1.80.1
 
 ## Otros
 [Pagina web Carbono](https://carbon.now.sh/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=material&wt=none&l=text%2Fx-php&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=47px&ph=32px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false)
