@@ -2,23 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.pratcicaarbolcontacto.modelo;
+package ec.edu.ups.estructura.arboles.contacto.modelo;
 
 /**
  *
- * @author ESTUDIANTE
+ * @author ACER
  */
-public class Nodo {
-    
+public class Node {
     private Contacto contacto;
-    
-    private Nodo izquierda;
-    private Nodo derecha;
+    private Node izquierda;
+    private Node derecha;
 
-    public Nodo(Contacto contacto) {
+    public Node(Contacto contacto) {
         this.contacto = contacto;
-        izquierda = null;
-        derecha = null;
+        this.izquierda = null;
+        this.derecha = null;
     }
 
     public Contacto getContacto() {
@@ -29,27 +27,22 @@ public class Nodo {
         this.contacto = contacto;
     }
 
-    public Nodo getIzquierda() {
+    public Node getIzquierda() {
         return izquierda;
     }
 
-    public void setIzquierda(Nodo izquierda) {
+    public void setIzquierda(Node izquierda) {
         this.izquierda = izquierda;
     }
 
-    public Nodo getDerecha() {
+    public Node getDerecha() {
         return derecha;
     }
 
-    public void setDerecha(Nodo derecha) {
+    public void setDerecha(Node derecha) {
         this.derecha = derecha;
     }
-
-    @Override
-    public String toString() {
-        return "Nodo{" + "contacto=" + contacto + ", izquierda=" + izquierda + ", derecha=" + derecha + '}';
-    }
-    
+   
     
     
     
