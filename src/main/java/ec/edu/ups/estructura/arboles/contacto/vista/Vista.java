@@ -69,14 +69,35 @@ public class Vista {
             }
         }
     }
+    
+    public boolean validacionActuzalizar(String nombre){
+        while (true) {
+            try {
+                System.out.println("El contacto con nombre: " + nombre + " no existe");
+                System.out.println("¿Desea ingresar un nuevo contacto con el nombre: " + nombre + " ?");
+                System.out.println("Ingrese una opcion: \n 1. Si \n 2.No");
+                //ingreso de opcion
+                
+                System.out.println("Ingrese la opcion deseada: ");
+                int opcion = scanner.nextInt();
+                scanner.nextLine();
+                
+                if(opcion == 1){
+                    return true;
+                }else if(opcion == 2){
+                    return false;
+                }else{
+                    System.out.println("Ingrese una opcion valida");
+                }
+                
+            } catch (Exception e) {
+                scanner.nextLine();
+                System.out.println("Error: Ingrese un valot valido");
 
-    public int pedirOpcion() {
-        
-        System.out.println("Ingrese la opcion deseada: ");
-        int opcion = scanner.nextInt();
-        scanner.nextLine();
-        return opcion;
+            }
+        }
     }
+
 
     public String pedirNombre() {
         System.out.print("Ingrese su nombre: ");

@@ -81,14 +81,8 @@ public class Controlador {
         Contacto contacto = arbolContactos.buscarContacto(nombre);
         if (contacto != null) {
             imprimirContacto(contacto);
-        } else {
-            vista.mostrarMensaje("El contacto con nombre: " + nombre + " no existe");
-            vista.mostrarMensaje("¿Desea ingresar un nuevo contacto con el nombre: " + nombre + " ?");
-            vista.mostrarMensaje("Ingrese una opcion: \n 1. Si \n 2.No");
-            int opcionAgregar = vista.pedirOpcion();
-            if (opcionAgregar == 1) {
+        } else if (vista.validacionActuzalizar(nombre)) {
                 ingresarC(nombre);
-            }
         }
     }
     
