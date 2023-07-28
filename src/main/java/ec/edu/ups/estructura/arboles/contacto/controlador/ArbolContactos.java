@@ -218,10 +218,10 @@ public class ArbolContactos {
             return nodo;
         }
         // Buscar el nodo según el nombre del contacto
-        if (nombre.compareTo(nodo.getContacto().getNombre()) < 0) {
+        if (nombre.compareToIgnoreCase(nodo.getContacto().getNombre()) < 0) {
             // Si el nombre es menor, buscar en el subárbol izquierdo
             nodo.setIzquierda(buscarRecursivo(nodo.getIzquierda(), nombre));
-        } else if (nombre.compareTo(nodo.getContacto().getNombre()) > 0) {
+        } else if (nombre.compareToIgnoreCase(nodo.getContacto().getNombre()) > 0) {
             // Si el nombre es mayor, buscar en el subárbol derecho
             nodo.setDerecha(eliminarContactoRec(nodo.getDerecha(), nombre));
         } else {
