@@ -16,7 +16,7 @@ Cada contacto en el sistema es una entidad multifacética, que incluye un nombre
 registra las redes sociales del contacto. Es interesante destacar que en este diccionario, la red social actúa como clave, lo que facilita el acceso y la gestión
 de la información.
 
-## 1.1 _Clases Principales
+## 1.1 Clases Principales
 - **Contacto** : Encapsula los datos esenciales de un contacto: nombre, número de teléfono, correos electrónicos y redes sociales.
 - **Nodo** : Representa los nodos del ABB. Cada nodo contiene un objeto 'Contacto' y referencias a sus nodos hijos (izquierdo y derecho).
 - **ArbolContactos** : Representa el ABB y mantiene su estructura. Proporciona métodos para agregar, buscar y eliminar contactos.
@@ -55,7 +55,8 @@ El código representa la implementación de un Árbol Binario de Búsqueda (ABB)
 - getRoot(): Proporciona el nodo raíz del ABB.
 - insertResursivo(Node node, Contacto newContacto): Realiza el procedimiento de inserción de un contacto en el ABB de manera recursiva, comparando los nombres de
   los contactos y determinando la ubicación adecuada del nuevo contacto en el árbol.
-![Metodo de In... Recursivo](https://github.com/PaulSebastianNaspud/estructura-u2-pratica3/assets/131235143/82da8ac2-aad9-4d72-85a5-1e14ff091f45)
+![Metodo de insertar](https://github.com/PaulSebastianNaspud/estructura-u2-pratica3/assets/131235143/c39105b5-7bf7-408e-ae92-aa35dc63c06d)
+
 
 
 
