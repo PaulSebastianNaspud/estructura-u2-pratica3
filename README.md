@@ -71,8 +71,6 @@ El sistema de gestión de contactos, implementando un Árbol Binario de Búsqued
 
 ## 5. Conclusiones
 
-## Conclusiones
-
 El desarrollo de este sistema de gestión de contactos ha proporcionado una experiencia práctica valiosa en la implementación de un Árbol Binario de Búsqueda (ABB) 
 y el patrón de diseño Modelo-Vista-Controlador (MVC) en Java. A través de la resolución de los retos que suponía la creación del sistema, se han adquirido 
 habilidades sólidas en estructuras de datos, algoritmos de búsqueda y programación orientada a objetos.
