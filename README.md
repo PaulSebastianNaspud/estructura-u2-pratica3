@@ -9,12 +9,11 @@
 ## Gestor de Contactos con Árbol Binario de Búsqueda
 
 # 1. Descripción del Proyecto
-Este proyecto aspira a diseñar un sistema sofisticado para la administración de una lista de contactos telefónicos. Nuestra estrategia se basa en la    
-implementación de una estructura de datos conocida como Árbol Binario de Búsqueda (ABB). Esta estructura de árbol permite optimizar eficazmente las operaciones  
-fundamentales de adición, búsqueda y eliminación de contactos.
-Cada contacto en el sistema es una entidad multifacética, que incluye un nombre, un número de teléfono, una colección de correos electrónicos y un diccionario que 
-registra las redes sociales del contacto. Es interesante destacar que en este diccionario, la red social actúa como clave, lo que facilita el acceso y la gestión
-de la información.
+Este proyecto aspira a diseñar un sistema sofisticado para la administración de una lista de contactos telefónicos. Nuestra estrategia se basa en la implementación 
+de una estructura de datos conocida como Árbol Binario de Búsqueda (ABB). Esta estructura de árbol permite optimizar eficazmente las operaciones  
+fundamentales de adición, búsqueda y eliminación de contactos. Cada contacto en el sistema es una entidad multifacética, que incluye un nombre, un número de 
+teléfono, una colección de correos electrónicos y un diccionario que registra las redes sociales del contacto. Es interesante destacar que en este diccionario, la 
+red social actúa como clave, lo que facilita el acceso y la gestión de la información.
 
 ## 1.1 Clases Principales
 - **Contacto** : Encapsula los datos esenciales de un contacto: nombre, número de teléfono, correos electrónicos y redes sociales.
@@ -65,3 +64,6 @@ El código representa la implementación de un Árbol Binario de Búsqueda (ABB)
 
 ![Eliminar Recursivo](https://github.com/PaulSebastianNaspud/estructura-u2-pratica3/assets/131235143/416b2d52-344f-4def-bd6a-a9a3e8691308)
 
+# Otros
+[Pagina web Carbono](https://carbon.now.sh/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=material&wt=none&l=text%2Fx-php&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=47px&ph=32px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false)
+[Documentacion Markdown](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
