@@ -3,7 +3,7 @@
 
 # Estructura de Datos Proyectos de Fin de ciclo
 
-### Integrantes: Paul Naspud, Karen Quito
+### Integrantes: Paul Naspud @PaulSebastianNaspud , Karen Quito @KQuitol
 ### Docente: 
 
 ## Gestor de Contactos con Árbol Binario de Búsqueda
