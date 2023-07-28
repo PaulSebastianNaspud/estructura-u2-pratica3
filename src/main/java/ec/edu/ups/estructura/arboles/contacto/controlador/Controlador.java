@@ -87,14 +87,14 @@ public class Controlador {
     }
     
     private void imprimirContacto(Contacto contacto){
-        vista.mostrarMensaje("CONTACTO: \n  nombre: " + contacto.getNombre() + "\n  telefono: " + contacto.getNumeroTelefonico());
+        vista.mostrarMensaje("CONTACTO: \n  Nombre: " + contacto.getNombre() + "\n  Telefono: " + contacto.getNumeroTelefonico());
         LinkedList<String> correos = contacto.getCorreos();
-        vista.mostrarMensaje("  correos: ");
+        vista.mostrarMensaje("  Correos: ");
         for (String correo : correos) {
             vista.mostrarMensaje("      "+correo);
         }
         Map<String ,String> redSociales = contacto.getRedSociales();
-        vista.mostrarMensaje("  redes sociales: ");
+        vista.mostrarMensaje("  Redes Sociales: ");
         for (Map.Entry<String, String> entry : redSociales.entrySet()) {
             Object key = entry.getKey();
             Object val = entry.getValue();
