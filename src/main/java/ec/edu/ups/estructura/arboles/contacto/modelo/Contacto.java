@@ -85,7 +85,15 @@ public class Contacto {
 
     @Override
     public String toString() {
-        return "CONTACTO: nombre: " + nombre + " telefono: " + numeroTelefonico + " correos: " + correos + " redes sociales: " + redSociales +"\n";
+        StringBuilder builder = new StringBuilder();
+        builder.append("****** CONTACTO *****\n");
+        builder.append( "Nombre: "  + nombre).append("\n");
+        builder.append(" Telefono: " + numeroTelefonico).append("\n");
+        builder.append(" === Correos=== \n" + correos).append("\n");
+        builder.append(" ===Redes sociales===\n " + redSociales);
+       
+        
+        return builder.toString();
     }
         
 }

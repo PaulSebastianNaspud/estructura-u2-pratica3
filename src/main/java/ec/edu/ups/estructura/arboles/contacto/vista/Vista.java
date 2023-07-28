@@ -4,6 +4,7 @@
  */
 package ec.edu.ups.estructura.arboles.contacto.vista;
 
+import ec.edu.ups.estructura.arboles.contacto.modelo.Contacto;
 import java.util.Scanner;
 
 /**
@@ -47,6 +48,7 @@ public class Vista {
 
     }
 
+    
     public int mostrarMenuImprimir() {
         //menu
         while (true) {
@@ -75,7 +77,7 @@ public class Vista {
             try {
                 System.out.println("El contacto con nombre: " + nombre + " no existe");
                 System.out.println("¿Desea ingresar un nuevo contacto con el nombre: " + nombre + " ?");
-                System.out.println("Ingrese una opcion: \n 1. Si \n 2.No");
+                System.out.println("Ingrese una opcion: \n 1. Si \n 2. No");
                 //ingreso de opcion
                 
                 System.out.println("Ingrese la opcion deseada: ");
@@ -132,5 +134,9 @@ public class Vista {
     /// Muestra un mensaje 
     public void mostrarMensaje(String mensaje) {
         System.out.println(mensaje);
+    }
+    
+    public void imprimirContacto(Contacto contacto){
+        System.out.println(contacto);
     }
 }

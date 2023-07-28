@@ -14,7 +14,7 @@ import java.util.Map;
  * @author ACER
  */
 public class Controlador {
-        private ArbolContactos arbolContactos;
+    private ArbolContactos arbolContactos;
     private Vista vista;
 
     public Controlador(Vista vista) {
@@ -45,7 +45,7 @@ public class Controlador {
                     agregarRedSocial();
                     break;
                 case 6:
-                    vista.mostrarMenuImprimir();
+                    imprimirMenu();
                     break;
                 case 7:
                     vista.mostrarMensaje("PESO DEL ARBOL");
@@ -80,29 +80,12 @@ public class Controlador {
         String nombre = vista.pedirNombreBuscar();
         Contacto contacto = arbolContactos.buscarContacto(nombre);
         if (contacto != null) {
-            imprimirContacto(contacto);
+            vista.imprimirContacto(contacto);
         } else if (vista.validacionActuzalizar(nombre)) {
                 ingresarC(nombre);
         }
     }
     
-    private void imprimirContacto(Contacto contacto){
-        vista.mostrarMensaje("CONTACTO: \n  nombre: " + contacto.getNombre() + "\n  telefono: " + contacto.getNumeroTelefonico());
-        LinkedList<String> correos = contacto.getCorreos();
-        vista.mostrarMensaje("  correos: ");
-        for (String correo : correos) {
-            vista.mostrarMensaje("      "+correo);
-        }
-        Map<String ,String> redSociales = contacto.getRedSociales();
-        vista.mostrarMensaje("  redes sociales: ");
-        for (Map.Entry<String, String> entry : redSociales.entrySet()) {
-            Object key = entry.getKey();
-            Object val = entry.getValue();
-            vista.mostrarMensaje("      "+key + ": " + val);
-        }
-        
-        
-    }
 
     public void ingresarC(String nombre) {
         vista.mostrarMensaje("INGRESO DE UN NUEVO CONTACTO");
@@ -153,7 +136,7 @@ public class Controlador {
     
     public void imprimirMenu() {
         int opcionImprimir = -1;
-        while (opcionImprimir != 0) {
+        do{
             opcionImprimir = vista.mostrarMenuImprimir();
             
             // Instancia de [dato] segun la opcion escogida
@@ -183,7 +166,7 @@ public class Controlador {
                     vista.mostrarMensaje("Opción inválida");
                     break;
             }
-        }
+        }while (opcionImprimir != 0) ;
     }
     
     
