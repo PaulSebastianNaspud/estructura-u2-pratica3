@@ -213,7 +213,7 @@ public class ArbolContactos {
     }
 
     public Node buscarRecursivo(Node nodo, String nombre) {
-        // Caso base: si el nodo es nulo, no se puede eliminar
+        // Caso base: si el nodo es nulo, no se puede buscar
         if (nodo == null) {
             return nodo;
         }
