@@ -53,7 +53,7 @@ public class Vista {
         //menu
         while (true) {
             try {
-                System.out.println("    ===== MENU IMPRIMIR ARBOL SEGUN EL RECORRIDO: =====");
+                System.out.println("\n    ===== MENU IMPRIMIR ARBOL SEGUN EL RECORRIDO: =====");
                 System.out.println("    1. Preorder");
                 System.out.println("    2. Inorder");
                 System.out.println("    3. PostOrder");

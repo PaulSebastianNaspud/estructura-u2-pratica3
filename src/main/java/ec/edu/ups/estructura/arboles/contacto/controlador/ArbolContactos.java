@@ -98,17 +98,22 @@ public class ArbolContactos {
     Queue<Node> queue = new LinkedList<>();
 
     public void breadth(Node root) {
+        // caso base 
         if (root == null) {
             return;
         }
+        //limpia la cola, si es que existe algun valor antes de entrar al bucle
         queue.clear();
+        //se agrega la raiz
         queue.add(root);
         while (!queue.isEmpty()) {
+            //se toma el primer nodo ingresado y se imprime
             Node node = queue.remove();
             System.out.print(node.getContacto() + " ");
+            //se repite el proceso con los nodes de la izquierda y derecha
             if (node.getIzquierda() != null) {
                 queue.add(node.getIzquierda());
-            }
+            }     
             if (node.getDerecha() != null) {
                 queue.add(node.getDerecha());
             }
@@ -218,10 +223,10 @@ public class ArbolContactos {
             return nodo;
         }
         // Buscar el nodo según el nombre del contacto
-        if (nombre.compareToIgnoreCase(nodo.getContacto().getNombre()) < 0) {
+        if (nombre.compareToIgnoreCase(nodo.getContacto().getNombre().trim()) < 0) {
             // Si el nombre es menor, buscar en el subárbol izquierdo
             nodo.setIzquierda(buscarRecursivo(nodo.getIzquierda(), nombre));
-        } else if (nombre.compareToIgnoreCase(nodo.getContacto().getNombre()) > 0) {
+        } else if (nombre.compareToIgnoreCase(nodo.getContacto().getNombre().trim()) > 0) {
             // Si el nombre es mayor, buscar en el subárbol derecho
             nodo.setDerecha(eliminarContactoRec(nodo.getDerecha(), nombre));
         } else {

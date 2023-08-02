@@ -86,7 +86,7 @@ public class Contacto {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("****** CONTACTO *****\n");
+        builder.append("\n****** CONTACTO *****\n");
         builder.append( "Nombre: "  + nombre).append("\n");
         builder.append(" Telefono: " + numeroTelefonico).append("\n");
         builder.append(" === Correos=== \n" + correos).append("\n");
